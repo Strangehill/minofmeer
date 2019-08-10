@@ -1,17 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
+const NavBarWrapper = styled.ul`
+  display: flex;
+  list-style-type: none;
+  > li {
+    flex: 1;
+  }
+`
+
 const NavBar = () => (
-  <ul>
-    <li><Link to="/about/">About</Link></li>
-    <li><Link to="/work/">Work</Link></li>
-    <li><Link to="/news/">News</Link></li>
-    <li><Link to="/contact/">Contact</Link></li>
-  </ul>
+  <NavBarWrapper>
+     <li><Link to="/about/">About</Link></li>
+     <li><Link to="/work/">Work</Link></li>
+     <li><Link to="/news/">News</Link></li>
+     <li><Link to="/contact/">Contact</Link></li>
+  </NavBarWrapper>
 )
 
 const IndexPage = () => (
@@ -21,10 +29,6 @@ const IndexPage = () => (
     <h2>is online</h2>
     <NavBar />
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
