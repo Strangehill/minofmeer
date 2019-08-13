@@ -4,6 +4,8 @@ The seed of this project was the
 [gatsby default starter](https://github.com/gatsbyjs/gatsby-starter-default),
 and so this README has been modified but is mostly as it was at moment of adoption.
 
+To develop: `gatsby develop`
+
 To deploy to github-pages,
 
 ```sh
