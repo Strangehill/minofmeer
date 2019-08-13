@@ -3,6 +3,7 @@ module.exports = {
     title: `MIN OF MEER`,
     description: `design studio`,
     author: `@strangehill`,
+    pathPrefix: `/minofmeer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
